@@ -1,333 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Trang Chủ</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<script src="https://kit.fontawesome.com/9872ede934.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="./public/css/index.css">
-
-	<script>
-		var myIndex = 0;
-		carousel();
-
-		function carousel() {
-		  var i;
-		  var x = document.getElementsByClassName("mySlides");
-		  for (i = 0; i < x.length; i++) {
-		    x[i].style.display = "none";  
-		  }
-		  myIndex++;
-		  if (myIndex > x.length) {myIndex = 1}    
-		  x[myIndex-1].style.display = "block";  
-		  setTimeout(carousel, 2000); // Change image every 2 seconds
-		}
-		</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Trade</title>
+    
+	<link rel="stylesheet" href="css/style1.css">
+        
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- Own Carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.css">
+    <link rel="stylesheet" href="./css/owl.theme.green.css">
+     <!-- JQuery & Own Carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./js/owl.carousel.js"></script>
+    <script src="js/web.js"></script>
 </head>
+<body onload="autoloadimg ()">
+<?php include_once './inc/header.php'?>
+   <!--end header-->
+    <div id="wrapper">
+        <div class="container">
+            <h4 style="text-align: center; margin:30px 0px 30px 30px">Mua sản phẩm được lựa chọn từ vườn </h4>
+            <div class="img-ctn">
 
-<body>
-<div class="container-fluid">
-    	<nav class="navbar bg-light fixed-top navbar-expand-sm navbar-light" >
-      		<a class="navbar-brand ml-xl-5" href="index.html"><img src="https://shop.vinfastauto.com/on/demandware.static/Sites-app_vinfast_vn-Site/-/default/dw7cb45730/images/vfast/logo.svg"></a>
-      		<ul class="navbar-nav my-xl-3 ml-xl-3">
-      			 <li class="nav-item dropdown">
-	          		<a class="nav-link mt-xl-2 mr-xl-5" href="#" id="navbardrop" data-toggle="dropdown"><dt> <i class="fas fa-align-left"></i> Ô Tô</dt></a>
-		        <div class="dropdown-menu" id="bg8">
-		            <a class="dropdown-item mr-xl-5" href="vinfastvfe34.html"><dt><img src="https://shop.vinfastauto.com/on/demandware.static/Sites-app_vinfast_vn-Site/-/default/dw5414b264/images/vfe34/Hinh-anh-dat-coc-Xe-dien-VinFast-VFe34-mau-do-Mystique-Red.png" width="40%"> VF e34</dt></a>
-		            <a class="dropdown-item mr-xl-5" href="vinfastpresident.html"><dt><img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw7652ab62/images/President/hinh-anh-gia-VinFast-President-V8-mau-do-red.png" width="40%"> President</dt></a>
-		            <a class="dropdown-item mr-xl-5" href="vinfastluxsa20.html"><dt><img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw616fde5d/images/Lux-SA/hinh-anh-gia-VinFast-Lux-SA2.0-ban-tieu-chuan-base-tra-gop-mau-do-red.png" width="40%"> LUX SA2.0</dt></a>
-		            <a class="dropdown-item mr-xl-5" href="vinfastluxa20.html"><dt><img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwbdd0e76b/images/Lux-A/hinh-anh-gia-xe-VinFast-Lux-A2.0-ban-tieu-chuan-mau-do-mystique-red.png" width="40%"> LUX A2.0</dt></a>
-		            <a class="dropdown-item mr-xl-5" href="vinfastfadil.html"><dt><img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw0ca94be5/images/Fadil/Hinh-anh-Mua-xe-VinFast-Fadil-ban-nang-cao-tra-gop-mau-do-Red.png" width="40%"> Fadil</dt></a>
-		        </div>
-		        </li>
-		       		<li class="nav-item dropdown mt-xl-2 mr-xl-5" >
-		          	<a class="nav-link"  href="#" id="navbardrop" data-toggle="dropdown"><dt><i class="fas fa-align-left"></i> Xe Máy Điện</dt></a>
-		        <div class="dropdown-menu" id="bg8">
-		            <a class="dropdown-item" href="theon.html"><dt><img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw5b9c413d/images/theon/RES.png" width="40%"> Theon</dt></a>
-		            <a class="dropdown-item" href="kalaras.html"><dt><img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw1cd0f676/images/kara/REQ.png" width="40%"> Kalara S</dt></a>
-		            <a class="dropdown-item" href="feliz.html"><dt><img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwa91a26b0/images/feliz/RET.png" width="40%"> Feliz</dt></a>
-		            <a class="dropdown-item" href="impes.html"><dt><img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwae93e65f/images/impes/RER.png" width="40%"> Impes</dt></a>
-		            <a class="dropdown-item" href="ludo.html"><dt><img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwcef50843/images/ludo/RER.png" width="40%"> Ludo</dt></a>
-		        </div>
-		        </li>
-		        	<li class="nav-item mt-xl-2 mr-xl-5" >
-		          		<a class="nav-link" href="uudai.html"><dt>Ư Đãi</dt></a>
-	        		</li>
-	        	<li class="nav-item dropdown mt-xl-2 mr-xl-5">
-	          		<a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown"><dt><i class="fas fa-align-left"></i> Dịch Vụ</dt></a>
-	          	<div class="dropdown-menu" id="bg8">
-	            	<a class="dropdown-item" href="baoduonghaumai.html"><dt> Bảo dưỡng hậu mãi</dt></a>
-	            	<a class="dropdown-item" href="dangnhapdangky.html"><dt> Đăng nhập/đăng kí</dt></a>
-	          	</div>
-	        	</li>
-	        	<ul class="ml-auto">
-		        	<li class="btn">
-		        		<a href="dangkylaithu.html"><button type="submit" class="btn btn-outline-dark">ĐĂNG KÝ LÁI THỬ</button></a>
-		        	</li>	
-		        </ul>        
-		        <div class="icon-bar mr-5 " id="textmg">
-		            <ul class="social-icons">
-		              <li><a class="dangnhap mt-xl-1" href="admin.html" ><i class="fas fa-user-plus"></i></a></li>
-		              <li><a class="datlich mt-xl-1" href="dangnhapdangky.html"><i class="fas fa-sign-in-alt"></i></a></li>
-		            </ul>
-		        </div>
-		        <ul class="navbar-nav mr-5">
-					<form class="form-inline" action="/somepage">
-					    <input class="form-control mr-sm-2" id="p" type="text" placeholder="Tìm Kiếm">
-					    <button class="btn btn-danger text-center" id="p1" type="submit"><i class="fas fa-search"></i></button>
-					</form>
-				</ul>
-	    	</ul>
-  		</div> 
-	<div class="container-fluid">
-		 <div class="w3-content w3-section" style="width: 100%;">
-		 	<img class="mySlides" src="https://storage.googleapis.com/vinfast-data-01/KV%20CSBH%20-1280%20x%20554_1628506022.jpg" style="width:100%">
-		  	<img class="mySlides" src="https://storage.googleapis.com/vinfast-data-01/KV_CSBH-1280x554_resize_1625220643.jpg" style="width:100%">
-		  	<img class="mySlides" src="https://storage.googleapis.com/vinfast-data-01/vi_VFe34%20NewKV_banner_1627116002.jpg" style="width:100%">
-		  	<img class="mySlides" src="https://storage.googleapis.com/vinfast-data-01/_vi_Klara_1625736876.jpg" style="width:100%">
-		  	<img class="mySlides" src="https://storage.googleapis.com/vinfast-data-01/CSBHT7_ludo&impes__1626150463.jpg" style="width:100%">
-		</div>
+                <div class="img-container">
+                    <div class="img-a1">
+                        <img src="http://mauweb.monamedia.net/happytrade/wp-content/uploads/2019/05/index_cate_1.png"  class="over ">  
+                        <div class="overplay">
+                            <img src="img/index_cate_1_hover.png"   > 
+                        </div>
+                    </div>
+                    <a href="http://mauweb.monamedia.net/happytrade/danh-muc/rau-cu/">Rau củ</a>
+                </div>
+                <div class="img-container">
+                    <div class="img-a1">
+                        <img src="http://mauweb.monamedia.net/happytrade/wp-content/uploads/2019/05/index_cate_2.png" class="over " > <br> 
+                        <div class="overplay">
+                            <img src="img/index_cate_2_hover.png" > <br> 
+                        </div>
+                    </div>
+                    <a href="http://mauweb.monamedia.net/happytrade/danh-muc/rau-cu/">Hải sản </a>
+                </div>
+                <div class="img-container">
+                    <div class="img-a1">
+                        <img src="http://mauweb.monamedia.net/happytrade/wp-content/uploads/2019/05/index_cate_3.png"  class="over ">  
+                        <div class="overplay">
+                            <img src="img/index_cate_3_hover.png"   > 
+                        </div>
+                    </div>
+                    <a href="http://mauweb.monamedia.net/happytrade/danh-muc/rau-cu/">Trứng thịt </a>
+                </div>
+                <div class="img-container">
+                    <div class="img-a1">
+                        <img src="http://mauweb.monamedia.net/happytrade/wp-content/uploads/2019/05/index_cate_4.png"  class="over ">  
+                        <div class="overplay">
+                            <img src="img/index_cate_4_hover.png"   > 
+                        </div>
+                    </div>
+                    <a href="http://mauweb.monamedia.net/happytrade/danh-muc/rau-cu/">Trái cây </a>
+                </div>
+                <div class="img-container">
+                    <div class="img-a1">
+                        <img src="http://mauweb.monamedia.net/happytrade/wp-content/uploads/2019/05/index_cate_5.png"  class="over ">  
+                        <div class="overplay">
+                            <img src="img/index_cate_5_hover.png"   > 
+                        </div>
+                    </div>
+                    <a href="http://mauweb.monamedia.net/happytrade/danh-muc/rau-cu/">Đồ khô </a>
+                </div>
+                <div class="img-container">
+                    <div class="img-a1">
+                        <img src="http://mauweb.monamedia.net/happytrade/wp-content/uploads/2019/05/index_cate_6.png"  class="over ">  
+                        <div class="overplay">
+                            <img src="img/index_cate_6_hover.png"   > 
+                        </div>
+                    </div>
+                    <a href="http://mauweb.monamedia.net/happytrade/danh-muc/rau-cu/">Đồ uống </a>
+                </div>
+            </div>
+            <div class="clear"></div>  
+            <h5 style="margin:30px 0px 30px 30px">CHƯƠNG TRÌNH KHUYẾN MÃI</h5>
+            <div class="medium">
+                <img src="img/index_promotion_1_large.png">
+                <img src="img/index_promotion_2_large.jpg">
+                <img src="img/index_promotion_3_large.jpg">
+                <img src="img/index_promotion_4_large.png">
+            </div>
+            <h5 style="margin:30px 0px 30px 30px">SẢN PHẨM NỔI BẬT </h5>
+            <div class="main" style="text-align: center;">
+                <div class="row " >
+                    <div class="col-md-6 col-4 col-lg-3">
+                        <div class="card"  >
+                            <img src="img/upload_ab2003c7b7e445f6a551b92f559c4881_master.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                               <h6 class="card-title">Cải bó xôi</h6>
+                               <h6 class="card-text">29,000 đ</h6>
+                               <a href="#" class="btn btn-success">Thêm vào giỏ </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-4 col-lg-3">
+                        <div class="card"  >
+                            <img src="img//sau_rieng_ri6_2_5635cf70bdbc413db7ccdb9bbc5955ed_master.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                               <h6 class="card-title">Sầu riêng Ri6</h6>
+                               <h6 class="card-text">235,000 đ</h6>
+                               <a href="#" class="btn  btn-success">Thêm vào giỏ </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-4 col-lg-3">
+                        <div class="card"  >
+                            <img src="img/upload_0eb73c63c83b4a388696a01d7394c2fc_master.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                               <h6 class="card-title">Thịt nạc đùi heo</h6>
+                               <h6 class="card-text">84,000 đ</h6>
+                               <a href="#" class="btn btn-success">Thêm vào giỏ </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-4 col-lg-3">
+                        <div class="card"  >
+                            <img src="img/upload_021f1d5bfb6043009170a1f950ecea5a_master.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                               <h6 class="card-title">Xoài cát Hòa Lộc </h6>
+                               <h6 class="card-text">140,000 đ</h6>
+                               <a href="#" class="btn btn-success">Thêm vào giỏ </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-4 col-lg-3">
+                        <div class="card"  >
+                            <img src="img/upload_1c4b595369214f1da01e1ee7dfe9b948_master.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                               <h6 class="card-title">Cam soàn hướng</h6>
+                               <h6 class="card-text">65,000 đ</h6>
+                               <a href="#" class="btn  btn-success">Thêm vào giỏ </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-4 col-lg-3">
+                        <div class="card"  >
+                            <img src="img/1_T_GX34ajHqviNUs4O6j8gg.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                               <h6 class="card-title">Bơ sáp Lâm Đồng</h6>
+                               <h6 class="card-text">135,000 đ</h6>
+                               <a href="#" class="btn  btn-success">Thêm vào giỏ </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6 col-4 col-lg-3">
+                        <div class="card"  >
+                            <img src="img/tom_su_huu_co_binca_3_master.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                               <h6 class="card-title">Tôm sú</h6>
+                               <h6 class="card-text">180,000 đ</h6>
+                               <a href="#" class="btn  btn-success">Thêm vào giỏ </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-4 col-lg-3">
+                        <div class="card"   >
+                            <img src="img/dragon-fruit-1490952843346-crop-1490953174156-2057.jpg" class="card-img-top"style="height: 187px;">
+                            <div class="card-body">
+                               <h6 class="card-title">Thanh long </h6>
+                               <h6 class="card-text">45,000 đ</h6>
+                               <a href="#" class="btn  btn-success">Thêm vào giỏ </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-4 col-lg-3">
+                        <div class="card"  >
+                            <img src="img/ca_trac_vang_bien_1_master.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                               <h6 class="card-title">Cá trác vàng biển</h6>
+                               <h6 class="card-text">71,000 đ</h6>
+                               <a href="#" class="btn  btn-success">Thêm vào giỏ </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-4 col-lg-3">
+                        <div class="card"  >
+                            <img src="img/ga.jpg" class="card-img-top" style="height: 187px;">
+                            <div class="card-body">
+                               <h6 class="card-title">Gà ta thả vườn </h6>
+                               <h6 class="card-text">195,000 đ</h6>
+                               <a href="#" class="btn  btn-success">Thêm vào giỏ </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-4 col-lg-3">
+                        <div class="card"  >
+                            <img src="img/ca_basa_huu_co_binca_cat_lat_master.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                               <h6 class="card-title">Cá Basa cắt lát</h6>
+                               <h6 class="card-text">75,000 đ</h6>
+                               <a href="#" class="btn  btn-success">Thêm vào giỏ </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-4 col-lg-3">
+                        <div class="card"  >
+                            <img src="img/upload_1d1797f33c5140e4a7742aa0470d77e5_master.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                               <h6 class="card-title">Bưởi da xanh</h6>
+                               <h6 class="card-text">70,000 đ</h6>
+                               <a href="#" class="btn btn-success">Thêm vào giỏ </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <button type="button" class="btn btn-success" style="margin-left: 620px; margin-top: 20px;">Xem thêm</button>  
+            <h5 style="margin:30px 0px 30px 30px">Kết nối nhà vườn</h5>
+            
+            <div class="owl-carousel owl-theme" style="margin-left: 35px;">
+                <div class="item">
+                    <div class="card border-0" style="width: 18rem;">
+                        <div class="border">
+                            <img src="img/logo-1.png "class="card-img-top p-1" alt="..." >
 
-		<script>
-		var myIndex = 0;
-		carousel();
+                         </div>
+                        <div class="card-body">
+                            <h6 class="">Công ty Thực Phẩm Tâm Minh</h6>
+                            <p class="card-text">Công ty TNHH Thực phẩm Tâm Minh có sản xuất Bột nêm Ngưu ...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card border-0" style="width: 18rem;">
+                        <div class="border">
+                            <img src="img/upload_2a9f0c359ba448c785490ea0c0ed3dc0_large.jpg" class="card-img-top p-1" alt="...">
 
-		function carousel() {
-		  var i;
-		  var x = document.getElementsByClassName("mySlides");
-		  for (i = 0; i < x.length; i++) {
-		    x[i].style.display = "none";  
-		  }
-		  myIndex++;
-		  if (myIndex > x.length) {myIndex = 1}    
-		  x[myIndex-1].style.display = "block";  
-		  setTimeout(carousel, 2000); // Change image every 2 seconds
-		}
-		</script>
+                         </div>
+                        <div class="card-body">
+                            <h6 class="">Antofu Việt Nam</h6>
+                            <p class="card-text">Antofu Việt Nam là công ty đầu tư 100% nguồn vốn ...</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="card border-0" style="width: 18rem;">
+                        <div class="border">
+                            <img src="img/upload_183f92f8231a4662af441d7826971e1e_large.jpg" class="card-img-top p-1" alt="...">
 
-  		<br>
-	</div>
-	<div class="container text-justify">
-		<div class="row">
-			<div class="col-md-12 text-center mb-3 mt-5">
-				<dt><h1>HÀNH TRÌNH CHINH PHỤC THẾ GIỚI</h1></dt>
-			</div>
-			<div class="col-md-4 text-center">
-				<dt>"Vinfast, thương hiệu ô tô Việt thuộc tập đoàn VinGroup là điển hình tiêu biểu của việc nhanh chóng phục hồi và có tiến bước nhanh chóng sau khi Việt Nam thành công chống dịch Covid..."</dt>
-				<dt class="mt-4">-Bloomberg-</dt>
-			</div>
-			<div class="col-md-4 text-center">
-				<dt>“Trong ngành công nghiệp xe hơi, việc thiết kế và chế tạo không chỉ một mà hai chiếc xe chỉ trong vòng 12 tháng là tốc độ không tưởng”</dt>
-				<dt class="mt-5">-Top Gear-</dt>
-			</div>
-			<div class="col-md-4 text-center">
-				<dt>"Chìa khóa để đạt thành công ngay từ khâu sản xuất của VinFast chính là các đối tác mạnh mẽ như ABB, Bosch, Magna Steyr và Siemens"</dt>
-				<dt id="mt">-CNBC-</dt>
-			</div>
-		</div>
-	</div>
+                         </div>
+                        <div class="card-body">
+                            <h6 class="">An Mộc Farm</h6>
+                            <p class="card-text">An Mộc Farm - trang trại thuần nông chuyên cung cấp ...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card border-0" style="width: 18rem;">
+                        <div class="border">
+                            <img src="img/viet_nature_logotype_color_on_white2.png" class="card-img-top p-1" alt="...">
 
-	<div class=" container-fluid pt-5">
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<h1 class="text-justify text-center">XE Ô TÔ</h1>
-				<br>
-			</div>
-		    <div class="col-md-4 mb-lg-5">
-		        <div class="hover hover-3 text-white rounded"><img src="https://storage.googleapis.com/vinfast-data-01/president.png" alt="">
-		         	<div class="hover-overlay">	
-		         	</div>
-		         		<div class="hover-3-noidung px-5 py-4">
-		            		<h3 class="hover-3-tieude text-uppercase font-weight-bold mb-0"> 
-		            			<span class="font-weight-light">VinFast </span>President
-		            		</h3>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">Dòng SUV</p>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">Dấu Ấn Người Thủ Lĩnh</p>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">
-		            			<a href="vinfastpresident.html"><button type="button" class="btn btn-outline-light mt-xl-4">Xem Chi Tiết</button></a>
-		            		</p>
-		          		</div>
-		        </div>
-		    </div>
-		    <div class="col-md-4 mb-5 mb-lg-5">
-		        <div class="hover hover-3 text-white rounded"><img src="https://storage.googleapis.com/vinfast-data-01/VFe34.png" alt="">
-		          	<div class="hover-overlay">		
-		          	</div>
-		         		<div class="hover-3-noidung px-5 py-4">
-		            		<h3 class="hover-3-tieude text-uppercase font-weight-bold mb-0"> 
-		            			<span class="font-weight-light">VinFast </span>VFe34
-		            		</h3>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">Dòng SUV</p>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">Bức Phá Mọi Giới Hạn</p>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">
-		            			<a href="vinfastvfe34.html"><button type="button" class="btn btn-outline-light mt-xl-4" >Xem Chi Tiết</button></a>
-		            		</p>
-		          		</div>
-		        </div>
-		    </div>
-		    <div class="col-md-4 mb-5 mb-lg-5">
-		        <div class="hover hover-3 text-white rounded"><img src="https://storage.googleapis.com/vinfast-data-01/2LuxSA.png" alt="">
-		          	<div class="hover-overlay">		
-		          	</div>
-		         		<div class="hover-3-noidung px-5 py-4">
-		            		<h3 class="hover-3-tieude text-uppercase font-weight-bold mb-0"> 
-		            			<span class="font-weight-light">VinFast </span>Lux SA2.0
-		            		</h3>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">Dong SUV</p>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">Chinh Phục Mọi Con Đường</p>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">
-		            			<a href="vinfastluxsa20.html"><button type="button" class="btn btn-outline-light mt-xl-4" >Xem Chi Tiết</button></a>
-		            		</p>
-		          		</div>
-		        </div>
-		    </div>
-		    <div class="col-md-2 mb-5 mb-lg-5"></div>
-		    <div class="col-md-4 mb-5 mb-lg-5">
-		        <div class="hover hover-3 text-white rounded"><img src="https://storage.googleapis.com/vinfast-data-01/LuxA_1.png" alt="">
-		          	<div class="hover-overlay">		
-		          	</div>
-		         		<div class="hover-3-noidung px-5 py-4">
-		            		<h3 class="hover-3-tieude text-uppercase font-weight-bold mb-0"> 
-		            			<span class="font-weight-light">VinFast </span> Lux A2.0
-		            		</h3>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">Dòng SEDAN</p>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">Tận Hưởng Từng Khoảng Khắc</p>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">
-		            			<a href="vinfastluxa20.html"><button type="button" class="btn btn-outline-light mt-xl-4" >Xem Chi Tiết</button></a>
-		            		</p>
-		          		</div>
-		        </div>
-		    </div>
-		    <div class="col-md-4 mb-3 mb-lg-3">
-		        <div class="hover hover-3 text-white rounded"><img src="https://storage.googleapis.com/vinfast-data-01/fadill.png" alt="">
-		          	<div class="hover-overlay">		
-		          	</div>
-		         		<div class="hover-3-noidung px-5 py-4">
-		            		<h3 class="hover-3-tieude text-uppercase font-weight-bold mb-0">
-		            		 	<span class="font-weight-light">VinFast </span> Fadil
-		            		 </h3>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">Dòng HATCHBACK</p>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">Tối ưu Mọi Trải Nghiệm</p>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">
-		            			<a href="vinfastfadil.html"><button type="button" class="btn btn-outline-light mt-xl-4" >Xem Chi Tiết</button></a>
-		            		</p>
-		          		</div>
-		        </div>
-		    </div>
-		</br>
-		    <div class="col-md-2 mb-5 mb-lg-5"></div>
-		    <div class="col-md-12"></div>  
-		    <div class="col-md-12 text-center text-justify pt-3"> 
-		    	</br> 
-				<h1>XE MÁY ĐIỆN</h1>
-				</br>
-			</div>
-			<div class="col-md-4 mb-5 mb-lg-5">
-		        <div class="hover hover-3 text-white rounded"><img src="https://storage.googleapis.com/vinfast-data-01/THEON_0.png" alt="">
-		         	<div class="hover-overlay">	
-		         	</div>
-		         		<div class="hover-3-noidung px-5 py-4">
-		            		<h3 class="hover-3-tieude text-uppercase font-weight-bold mb-0">
-		            		 	<span class="font-weight-light">VinFast </span>THEON
-		            		 </h3>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">Công Nghệ Bức Phá, Trải Nghiệm Đỉnh Cao</p>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">
-		            			<a href="theon.html"><button type="button" class="btn btn-outline-light mt-xl-4" >Xem Chi Tiết</button></a>
-		            		</p>
-		          		</div>
-		        </div>
-		    </div>
-		    <div class="col-md-4 mb-5 mb-lg-5">
-		        <div class="hover hover-3 text-white rounded"><img src="https://storage.googleapis.com/vinfast-data-01/FELIZ_0.png" alt="">
-		          	<div class="hover-overlay">		
-		          	</div>
-		         		<div class="hover-3-noidung px-5 py-4">
-		            		<h3 class="hover-3-tieude text-uppercase font-weight-bold mb-0"> 
-		            			<span class="font-weight-light">VinFast </span>Feliz
-		            		</h3>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">Sống Xanh Thanh Lịch</p>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">
-		            			<a href="feliz.html"><button type="button" class="btn btn-outline-light mt-xl-4">Xem Chi Tiết</button></a>
-		            		</p>
-		          		</div>
-		        </div>
-		    </div>
-		    <div class="col-md-4 mb-5 mb-lg-5">
-		        <div class="hover hover-3 text-white rounded"><img src="https://storage.googleapis.com/vinfast-data-01/KLARA_S.png" alt="">
-		          	<div class="hover-overlay">		
-		          	</div>
-		         		<div class="hover-3-noidung px-5 py-4">
-		            		<h3 class="hover-3-tieude text-uppercase font-weight-bold mb-0">
-		            		 	<span class="font-weight-light">VinFast </span>Klara s
-		            		 </h3>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">Khởi Đầu Phong Cách Mới</p>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">
-		            			<a href="kalaras.html"><button type="button" class="btn btn-outline-light mt-xl-4">Xem Chi Tiết</button></a>
-		            		</p>
-		          		</div>
-		        </div>
-		    </div>
-		    <div class="col-md-2 mb-5 mb-lg-5"></div>
-		    <div class="col-md-4 mb-5 mb-lg-5">
-		        <div class="hover hover-3 text-white rounded"><img src="https://storage.googleapis.com/vinfast-data-01/IMPES.png" alt="">
-		          	<div class="hover-overlay">		
-		          	</div>
-		         		<div class="hover-3-noidung px-5 py-4">
-		            		<h3 class="hover-3-tieude text-uppercase font-weight-bold mb-0"> 
-		            			<span class="font-weight-light">VinFast </span> Impes
-		            		</h3>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">Dáng Sành Điệu, Kiểu Chất Chơi</p>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">
-		            			<a href="impes.html"><button type="button" class="btn btn-outline-light mt-xl-4" >Xem Chi Tiết</button></a>
-		            		</p>
-		          		</div>
-		        </div>
-		    </div>
-		    <div class="col-md-4 mb-3 mb-lg-3">
-		        <div class="hover hover-3 text-white rounded"><img src="https://storage.googleapis.com/vinfast-data-01/LUDO.png" alt="">
-		          	<div class="hover-overlay">		
-		          	</div>
-		         		<div class="hover-3-noidung px-5 py-4">
-		            		<h3 class="hover-3-tieude text-uppercase font-weight-bold mb-0">
-		            			<span class="font-weight-light">VinFast </span> Ludo
-		            		</h3>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">Tỏa Chất Riêng-Bật Cá Tính</p>
-		            		<p class="hover-3-trichdan font-weight-light mb-0">
-		            			<a href="ludo.html"><button type="button" class="btn btn-outline-light mt-xl-4">Xem Chi Tiết</button></a>
-		            		</p>
-		          		</div>
-		        </div>
-		    </div>
-		</br>
-		</div>
-	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12 text-center text-justify"> 
-		    	</br> 
-				<h1>VIDEO GIỚI THIỆU</h1>
-				</br>
-			</div>
-			<div class="col-md-8">
-				<video width="100%" controls>
-					 <source src="./public/video/video1.mp4">
-				</video>
-			</div>
-			<div class="col-md-4">
-				<video width="100%" controls>
-					 <source src="./public/video/video2.mp4">
-				</video>
-				<video width="100%" controls>
-					 <source src="./public/video/video3.mp4">
-				</video>
-			</div>
-		</br>
-		</div>
-	</div> 	
-	<?php include_once './inc/footer.php'?>
+                         </div>
+                        <div class="card-body">
+                            <h6 class="">Công ty Thiên Nhiên Việt</h6>
+                            <p class="card-text">Công ty TNHH xuất nhập khẩu Thiên Nhiên Việt chuyên ...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card border-0" style="width: 18rem;">
+                        <div class="border">
+                            <img src="img/binca-vietnam-logo_large.png" class="card-img-top p-1" alt="...">
+
+                         </div>
+                        <div class="card-body">
+                            <h6 class="">Binca Việt Nam</h6>
+                            <p class="card-text">Chính thức bước vào thị trường Việt Nam vào năm 1998 ...</p>
+                        </div>
+                    </div>
+                </div>  
+                
+                 
+            </div>
+            <h5 style="margin:30px 0px 30px 30px">Hành trình Organic bắt đầu từ đây</h5>
+            <div class="row " style="margin-left: 10px; "  >
+                <div class="col-md-3" >
+                    <div class="border">
+                        <img src="http://mauweb.monamedia.net/happytrade/wp-content/uploads/2019/05/index_news_1.png" style="height: 60%; width: 100%;">
+
+                    </div>
+                    <div class="card-body">
+                        <h6 style="margin-top: 20px; "><a href="#" >Làm thế nào để được chứng nhận hữu cơ ở Việt Nam?</a></h6>
+                        <p>Chứng nhận hữu cơ là một tiêu chuẩn góp phần đảm bảo tính giá trị cho các sản phẩm hữu cơ.</p>
+                    </div>
+                </div>
+                <div class="col-md-3" >
+                    <div class="border">
+                        <img src="http://mauweb.monamedia.net/happytrade/wp-content/uploads/2019/05/index_news_2.jpg" style="height:  60%; width: 100%;">
+                    </div>
+                    <div class="card-body">
+                        <h6 style="margin-top: 20px;"><a href="#">Giải đáp : Thực phẩm hữu cơ Organic là gì ?</a></h6>
+                        <p>Thực phẩm organic hay còn gọi là thực phẩm hữu cơ đang ngày một phổ biến và tạo một cơn sốt trên thị trường hiện nay.</p>
+                    </div>
+                </div>
+                <div class="col-md-3" >
+                    <div class="border">
+                        <img src="http://mauweb.monamedia.net/happytrade/wp-content/uploads/2019/05/index_news_3.jpg"style="height:  60%; width: 100%;">
+                  
+                    </div>
+                    <div class="card-body">
+                        <h6 style="margin-top: 20px;"><a href="#">Nông nghiệp hữu cơ và thực trạng chứng nhận tại Việt Nam</a></h6>
+                        <p>Là một mô hình nông nghiệp còn khá mới tại VN nhưng đã được áp dụng từ lâu ở những nước phát triển.</p>
+                    </div>
+                </div>
+                <div class="col-md-3" >
+                    <div class="border">
+                        <img src="http://mauweb.monamedia.net/happytrade/wp-content/uploads/2019/05/index_news_4.jpg"style="height:  60%; width: 100%;"> 
+                    </div>
+                    <div class="card-body">
+                        <h6 style="margin-top: 20px;"><a href="#">Tổng hợp những điều bạn cần biết về thực phẩm organic</a></h6>
+                        <p>Thực phẩm hữu cơ – thực phẩm organic xuất hiện trong thời gian gần đây như là cứu cánh của nhiều bà nội trợ Việt Nam.</p>
+                    </div>
+                </div>
+            </div>
+             
+                
+            
+        </div>
+         
+       <div class="background mt-5" >
+            <h1 class="block-1"  >Khách hàng nói gì về MonaFesh</h1>
+            <div class="row">
+                <div class="col-md-4">
+                <img src = "img/bang.jpg" >
+                <p>“Trang này dịch vụ tốt, rau củ quả tươi ngon an toàn, giá hợp lý.<br> Mình rất hài lòng và sẽ giới thiệu cho bạn bè mình.”<br>
+
+                    Viết Bằng / Mona Media</p>
+                </div> 
+                <div class="col-md-4">
+                <img src = "img/trinh.jpg" >
+                <p>“MonaFresh là nơi giúp bạn có thể yên tâm <br>khi lựa chọn thực phẩm và hiểu hơn về nông nghiệp hữu cơ”<br>
+
+                    Kiều Trinh / Mona Media</p>
+                </div> 
+                <div class="col-md-4">
+                <img src = "img/trinh.jpg" >
+                <p>“Trang này dịch vụ tốt, rau củ quả tươi ngon an toàn, giá hợp lý. ”<br>
+
+                    Quốc Toản / Mona Media</p>
+                </div> 
+            </div> 
+            <img src = "img/thung_lung_bac_son.jpg" >
+           
+        </div>
+        
+        
+    </div>
+    <!--end wrapper-->
+    <?php include_once './inc/footer.php'?>
+    <!--end footer-->
 </body>
-</html>	
+<script type="text/javascript">
+    var vimg = document.getElementById("anhnen-a")
+    var t ;
+    var i = 1 ;
+    function autoloadimg() {
+        t = setInterval(function autoloadimg(){
+            i++;
+            if ( i > 3 ){
+                i = 1;
+            }
+            vimg.src = "img/" + "banner" + i +".jpg" ;
+        }, 2000 )
+    }
+    $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                // loop:true,
+                margin:0,
+                nav:true,
+                // items: 2,
+                mouseDrag: true,
+                touchDrag: true,
+                pullDrag: true,
+                dots: false,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    400: {
+                        items:2
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:4
+                    }
+                }
+            })
+        });
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>     -->
+   
+</html>
